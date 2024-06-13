@@ -1,0 +1,145 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 120px;
+}
+
+.services-title {
+  position: relative;
+}
+
+.services-title h1 {
+  padding: 0px 30px;
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.services-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.service-format {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 60px;
+  border-radius: 10px;
+  border: 2px solid white;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.service-format h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.service-format h2 {
+  font-size: 28px;
+  font-weight: 800;
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.service-format p {
+  color: #d4d4d4;
+  font-size: 17px;
+  line-height: 40px;
+  max-width: 300px;
+}
+
+.services-readmore {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.service-format:hover {
+  border: 2px solid #ff00ff;
+  background: linear-gradient(45deg, #3f0028, #582300);
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+/*------------------media qus---------------------*/
+@media (max-width: 1060px) {
+  .services-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .services {
+    margin: 50px 50px;
+  }
+}
+
+@media (max-width: 799px) {
+  .services {
+    gap: 50px;
+    margin: 50px 70px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .services-title h1 {
+    font-size: 40px;
+  }
+
+  .services-title img {
+    width: 150px;
+    right: 20px;
+  }
+
+  .services-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .service-format {
+    padding: 15px;
+  }
+
+  .service-format h3 {
+    font-size: 19px;
+  }
+
+  .service-format h2 {
+    font-size: 25px;
+  }
+
+  .service-format p {
+    line-height: 28px;
+    font-size: 15px;
+  }
+
+  .service-format {
+    gap: 10px;
+  }
+
+  .service-format img {
+    width: 23px;
+  }
+}
+
+@media (max-width: 435px) {
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+}
+
